@@ -37,16 +37,16 @@ This project implements a client-server application that provides file metadata 
 **UDP Socket Creation**:
 ```python
 udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-
+```
 **TCP Socket Creation**:
 ```python
 tcp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
+```
 **Multi-threading TCP**:
 ```python
 client_thread = threading.Thread(target=handle_client, args=(client_socket, address))
 client_thread.start()
-
+```
 ## 4. How to Run
 
  **Prerequisites**:
@@ -57,10 +57,12 @@ client_thread.start()
 **Running the Servers**:
 ```bash
 python file_metadata_app.py server
+```
 
 **Running the Client**:
 ```bash
 python file_metadata_app.py client
+```
 
 **Using Executables**:
 - Navigate to the dist folder
@@ -73,6 +75,7 @@ python file_metadata_app.py client
 Client query: "test1.txt"
 Server response: "YES: File 'test1.txt' exists"
 Response time: ~1ms
+```
 
 **TCP Test**:
 ```text
@@ -84,6 +87,7 @@ Size: 67 bytes
 Created: 2026-02-24 05:43:49
 Modified: 2026-02-24 05:43:49
 Permissions: 665
+```
 
 **Multiple TCP Clients**:
 
