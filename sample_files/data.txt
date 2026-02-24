@@ -1,0 +1,4 @@
+Sample data file with some numbers:
+42
+123
+789
